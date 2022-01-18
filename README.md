@@ -32,6 +32,10 @@ turn gradually.
   • A distance threshold D specifying the minimum distance you must be from one of the four
 passengers above before you can pick them up. This distance threshold also governs the end of the path.
 
+# Passenger Pickups
+
+  passenger pickups are tracked using a short int.  When a passenger's node (outlined in config.txt) is visited, a set value is added to the short.  A solution is only found when the end node is found AND the short int contains the proper value to indicate the specific passenger have been picked up.  Without this passenger restriction, this program finds a valid path much faster.
+
 # Solution
 A solution is found when the 'train' reaches the destination under the preceeding constraints AND contains passengers named Dean, Lin, and EITHER Perez or Reeder.  In the coming weeks as I improve this program, I will make it possible to define your own passenger constraints in the config.txt.
 
@@ -43,8 +47,5 @@ My solution involves calculating and visiting neighbor nodes "on the fly" as opp
   
 Each valid neighbor for the node in question is added into a vector and visited in order, using Dijkstra's algorithm and a priority queue.  Predecessor nodes are tracked, so when a solution is found, a path can be drawn back to the start.
 
-# Passenger Pickups
-
-  passenger pickups are tracked using a short int.  When a passenger's node (outlined in config.txt) is visited, a set value is added to the short.  A solution is only found when the end node is found AND the short int contains the proper value to indicate the specific passenger have been picked up.  Without this passenger restriction, this program finds a valid path much faster.
   
   This readme is a work in progress and will be updated as the project is updated.
