@@ -6,6 +6,9 @@ This program was written within the context of a sophmore level data structures 
 # Railway Maze
 A railway maze, invented by mathematician Roger Penrose, is a special kind of maze intended to emulate the path of a train.  The goal is to solve the maze in one continuous path, without reversing, and only making gradual turns (angles less than some constant value).  This program attempts to solve a train maze in the form of a .PPM file, using constraints defined in config.txt.  This problem also contains the additional constraint of having to pick up a number of passengers located at various coordinates along the way.
 
+Here is an example of a valid solution to an example railway maze:
+![Railway Maze](https://github.com/mbpautz762/railway-maze-solver/blob/main/solution-example.jpg?raw=true)
+
 # Problem Constraints
 In it's current form, the config.txt file contains the following information: 
 
