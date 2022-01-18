@@ -1,4 +1,4 @@
-# train-maze-solver
+# railway-maze-solver
 An Implementation of Dijkstra's algorithm to solve train mazes with specific path restrictions.
 
 This program was written within the context of a sophmore level data structures and algorithms class.  This program should be compiled using the -O9 compiler flag for a runtime of 10 seconds or less.
