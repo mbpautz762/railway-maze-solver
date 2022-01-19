@@ -40,9 +40,13 @@ passengers above before you can pick them up. This distance threshold also gover
 A solution is found when the 'train' reaches the destination under the preceeding constraints AND contains passengers named Dean, Lin, and EITHER Perez or Reeder.  In the coming weeks as I improve this program, I will make it possible to define your own passenger constraints in the config.txt.
 
 My solution involves calculating and visiting neighbor nodes "on the fly" as opposed to pre-calculating the entire graph in order to reduce running time.  A neighbor is considered valid if:
+
   • the RGB values at the coordinate in question indicate it is a valid path pixel, as defined in config.txt.
+  
   • it falls within the distance constraints outlined in config.txt.
+  
   • it's angle (calculated using vector dot products from it's previously-visited node) falls within the angle constraints outlined in config.txt.
+  
   • it lies in the same direction, as determined by it's previous node.
   
 Each valid neighbor for the node in question is added into a vector and visited in order, using Dijkstra's algorithm and a priority queue.  Predecessor nodes are tracked, so when a solution is found, a path can be drawn back to the start.
