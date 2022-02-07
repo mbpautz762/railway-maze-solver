@@ -53,3 +53,8 @@ Each valid neighbor for the node in question is added into a vector and visited 
 
   
   This readme is a work in progress and will be updated as the project is updated.
+  
+  # Limitations
+  • Since this project was originally an assignment within specific assignment parameters, it currently is a mess of global variables.  This will be fixed in future iterations.
+  
+  • Related to the above, future iterations will make the code easier to read, split into multiple files for organization purposes, etc
